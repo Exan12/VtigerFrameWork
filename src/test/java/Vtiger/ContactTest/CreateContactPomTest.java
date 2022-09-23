@@ -12,7 +12,7 @@ public class CreateContactPomTest extends BaseClass{
     @ Test (groups = "SmokeSuite")
 	public void CreateContactTest() throws Throwable {
 		
-        // Step - 4 : Click On the Organization Link
+        // Step - 4 : Click On the Contacts Link
 		HomePage hp = new HomePage(driver);
 		hp.ClickOnContactsLnk();
 		
@@ -41,9 +41,6 @@ public class CreateContactPomTest extends BaseClass{
 	    	System.out.println("New Contact Not Created Sucessfully ---> FAIL");
 	    }
 	    
-	    // Step - 9 : Logout
-	    Thread.sleep(2000);
-	    hp.SignOutApp(driver);
 	}
     
     @Test (groups = "RegressionSuite")

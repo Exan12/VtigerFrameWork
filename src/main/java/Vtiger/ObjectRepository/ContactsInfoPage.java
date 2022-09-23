@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class ContactsInfoPage { 
 	
 	// Declaration
-	@FindBy(xpath = "//td[@id=\"mouseArea_Last Name\"]")
+	@FindBy(xpath = "//input[@name=\"lastname\"]")
 	private WebElement LastNameField;
 	
 	@FindBy(xpath = "//span[@class=\"dvHeaderText\"]")
@@ -42,7 +42,6 @@ public class ContactsInfoPage {
 	public String ContactLastnameField()
 	{
 		String ConName = LastNameField.getText();
-		System.out.println(ConName);
 		return ConName;
 	}
 	
@@ -53,7 +52,6 @@ public class ContactsInfoPage {
 	public String ContactsHeader()
 	{
 		String ConHeader = Titleinfo.getText();
-		System.out.println(ConHeader);
 		return ConHeader;
 	}
 
