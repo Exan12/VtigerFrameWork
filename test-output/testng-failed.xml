@@ -3,12 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Vtiger.Practice.AssertionPractice">
+      <class name="Vtiger.ContactTest.CreateContactPomTest">
         <methods>
-          <include name="assertPractice1"/>
-          <include name="assertPractice"/>
+          <include name="acConfig"/>
+          <include name="bcConfig"/>
+          <include name="amConfig"/>
+          <include name="DemoRegressionTest"/>
+          <include name="bsConfig"/>
+          <include name="bmConfig"/>
+          <include name="asConfig"/>
         </methods>
-      </class> <!-- Vtiger.Practice.AssertionPractice -->
+      </class> <!-- Vtiger.ContactTest.CreateContactPomTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
