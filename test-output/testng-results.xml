@@ -1,107 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[ ---- DB Connection Successfull ---- ]]>
-    </line>
-    <line>
-      <![CDATA[chrome--- Browser Launched ---- ]]>
-    </line>
-    <line>
-      <![CDATA[ --- Logged In Sucessfully --- ]]>
-    </line>
-    <line>
-      <![CDATA[ --- Logged Out Succesfully --- ]]>
-    </line>
-    <line>
-      <![CDATA[ --- Logged In Sucessfully --- ]]>
-    </line>
-    <line>
-      <![CDATA[ --- Logged Out Succesfully --- ]]>
-    </line>
-    <line>
-      <![CDATA[ --- Browser closed Sucessfully --- ]]>
-    </line>
-    <line>
-      <![CDATA[ --- Database Connection Closed Succesfully]]>
-    </line>
   </reporter-output>
-  <suite started-at="2022-09-23T12:28:26 IST" name="Default suite" finished-at="2022-09-23T12:29:26 IST" duration-ms="59880">
+  <suite started-at="2022-10-05T03:34:53 IST" name="Default suite" finished-at="2022-10-05T03:34:54 IST" duration-ms="304">
     <groups>
-      <group name="RegressionSuite">
-        <method signature="CreateContactPomTest.DemoRegressionTest()[pri:0, instance:Vtiger.ContactTest.CreateContactPomTest@49139829]" name="DemoRegressionTest" class="Vtiger.ContactTest.CreateContactPomTest"/>
-      </group> <!-- RegressionSuite -->
-      <group name="SmokeSuite">
-        <method signature="CreateContactPomTest.CreateContactTest()[pri:0, instance:Vtiger.ContactTest.CreateContactPomTest@49139829]" name="CreateContactTest" class="Vtiger.ContactTest.CreateContactPomTest"/>
-      </group> <!-- SmokeSuite -->
     </groups>
-    <test started-at="2022-09-23T12:28:26 IST" name="Default test" finished-at="2022-09-23T12:29:26 IST" duration-ms="59880">
-      <class name="Vtiger.ContactTest.CreateContactPomTest">
-        <test-method is-config="true" signature="bsConfig()[pri:0, instance:Vtiger.ContactTest.CreateContactPomTest@49139829]" started-at="2022-09-23T12:28:25 IST" name="bsConfig" finished-at="2022-09-23T12:28:26 IST" duration-ms="1024" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ ---- DB Connection Successfull ---- ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- bsConfig -->
-        <test-method is-config="true" signature="bcConfig()[pri:0, instance:Vtiger.ContactTest.CreateContactPomTest@49139829]" started-at="2022-09-23T12:28:26 IST" name="bcConfig" finished-at="2022-09-23T12:28:43 IST" duration-ms="16780" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[chrome--- Browser Launched ---- ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- bcConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Vtiger.ContactTest.CreateContactPomTest@49139829]" started-at="2022-09-23T12:28:43 IST" name="bmConfig" finished-at="2022-09-23T12:28:49 IST" duration-ms="6026" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ --- Logged In Sucessfully --- ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="CreateContactTest()[pri:0, instance:Vtiger.ContactTest.CreateContactPomTest@49139829]" started-at="2022-09-23T12:28:49 IST" name="CreateContactTest" finished-at="2022-09-23T12:29:13 IST" duration-ms="24684" status="PASS">
+    <test started-at="2022-10-05T03:34:53 IST" name="Default test" finished-at="2022-10-05T03:34:54 IST" duration-ms="304">
+      <class name="Vtiger.Practice.TestNgPractice">
+        <test-method signature="createCustomerTest()[pri:1, instance:Vtiger.Practice.TestNgPractice@2e005c4b]" started-at="2022-10-05T03:34:54 IST" name="createCustomerTest" finished-at="2022-10-05T03:34:54 IST" duration-ms="14" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateContactTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Vtiger.ContactTest.CreateContactPomTest@49139829]" started-at="2022-09-23T12:29:13 IST" name="amConfig" finished-at="2022-09-23T12:29:15 IST" duration-ms="2116" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ --- Logged Out Succesfully --- ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="bmConfig()[pri:0, instance:Vtiger.ContactTest.CreateContactPomTest@49139829]" started-at="2022-09-23T12:29:15 IST" name="bmConfig" finished-at="2022-09-23T12:29:18 IST" duration-ms="2983" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ --- Logged In Sucessfully --- ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- bmConfig -->
-        <test-method signature="DemoRegressionTest()[pri:0, instance:Vtiger.ContactTest.CreateContactPomTest@49139829]" started-at="2022-09-23T12:29:18 IST" name="DemoRegressionTest" finished-at="2022-09-23T12:29:18 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- createCustomerTest -->
+        <test-method signature="modifyCustomerTest()[pri:2, instance:Vtiger.Practice.TestNgPractice@2e005c4b]" started-at="2022-10-05T03:34:54 IST" name="modifyCustomerTest" finished-at="2022-10-05T03:34:54 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- DemoRegressionTest -->
-        <test-method is-config="true" signature="amConfig()[pri:0, instance:Vtiger.ContactTest.CreateContactPomTest@49139829]" started-at="2022-09-23T12:29:18 IST" name="amConfig" finished-at="2022-09-23T12:29:24 IST" duration-ms="5770" status="PASS">
+        </test-method> <!-- modifyCustomerTest -->
+        <test-method signature="deleteCustomerTest()[pri:3, instance:Vtiger.Practice.TestNgPractice@2e005c4b]" started-at="2022-10-05T03:34:54 IST" name="deleteCustomerTest" finished-at="2022-10-05T03:34:54 IST" duration-ms="2" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[ --- Logged Out Succesfully --- ]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- amConfig -->
-        <test-method is-config="true" signature="acConfig()[pri:0, instance:Vtiger.ContactTest.CreateContactPomTest@49139829]" started-at="2022-09-23T12:29:24 IST" name="acConfig" finished-at="2022-09-23T12:29:26 IST" duration-ms="1439" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ --- Browser closed Sucessfully --- ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- acConfig -->
-        <test-method is-config="true" signature="asConfig()[pri:0, instance:Vtiger.ContactTest.CreateContactPomTest@49139829]" started-at="2022-09-23T12:29:26 IST" name="asConfig" finished-at="2022-09-23T12:29:26 IST" duration-ms="66" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[ --- Database Connection Closed Succesfully]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- asConfig -->
-      </class> <!-- Vtiger.ContactTest.CreateContactPomTest -->
+        </test-method> <!-- deleteCustomerTest -->
+      </class> <!-- Vtiger.Practice.TestNgPractice -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
