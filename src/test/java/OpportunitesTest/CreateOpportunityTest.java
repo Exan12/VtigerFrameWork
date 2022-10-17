@@ -1,4 +1,4 @@
-package Vtiger.Practice;
+package OpportunitesTest;
 
 import java.time.Duration;
 import java.util.Random;
@@ -10,10 +10,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.Test;
 
-public class CreateOpportunity {
+public class CreateOpportunityTest {
 
-	public static void main(String[] args) throws InterruptedException 
+	@Test
+	public void opportunity() throws InterruptedException
 	{
 		// Create Random Method
 		Random ran = new Random();
@@ -97,10 +99,10 @@ public class CreateOpportunity {
 		String CMPHEADER = driver.findElement(By.xpath("//span[@class=\"dvHeaderText\"]")).getText();
 		System.out.println(CMPHEADER);
 		
-		Thread.sleep(10000);
+		Thread.sleep(1000);
 		if(CMPHEADER.contains(CMPNAME))
 		{
-			Thread.sleep(10000);
+			Thread.sleep(1000);
 			System.out.println("Campaign is Created ----> PASS");
 		}
 		else
@@ -150,8 +152,9 @@ public class CreateOpportunity {
 		Set<String> allwhs = driver.getWindowHandles();
 		for(String wh1:allwhs)
 		{
-			String Title = driver.switchTo().window(wh1).getTitle();
-			if(Title.contains("Potentials"))
+			String Title1 = driver.switchTo().window(wh1).getTitle();
+			System.out.println(Title1);
+			if(Title1.contains("Potentials"))
 			{
 				System.out.println("Traversed to Parent Window");
 			}
@@ -176,10 +179,10 @@ public class CreateOpportunity {
 	    
 	    // Traversing from parent to Campaigns child module
 	    Set<String> allwhs1 = driver.getWindowHandles();
-	    for(String wh:allwhs1)
+	    for(String wh2:allwhs1)
 	    {
-	    	String Title = driver.switchTo().window(wh).getTitle();
-	    	if(Title.contains("Campaigns"))
+	    	String Title2 = driver.switchTo().window(wh2).getTitle();
+	    	if(Title2.contains("Campaigns"))
 	    	{
 	    		System.out.println("Entered into Campaigns child module");
 	    		
@@ -195,15 +198,50 @@ public class CreateOpportunity {
 		
 		// Traversing Campaign child module to Parent module
 		Set<String> allwhs2 = driver.getWindowHandles();
-		for(String wh2:allwhs2)
+		for(String wh3:allwhs2)
 		{
-			String Title = driver.switchTo().window(wh2).getTitle();
-			if(Title.contains("Potentials"))
+			String Title3 = driver.switchTo().window(wh3).getTitle();
+			if(Title3.contains("Potentials"))
 			{
 				System.out.println("Traversed to Parent Window");
 			}
 		} 
 		
-	}
-
+		System.out.println("Campaign source is successfully added to Opportunity Module");
+		
+		// Adding Amount
+		driver.findElement(By.name("amount")).sendKeys("1000");
+		System.out.println("Amount is added succesfully");
+		
+		// Adding sales stage
+		WebElement ddaddr3 = driver.findElement(By.name("sales_stage"));
+		Select sel3 = new Select(ddaddr3);
+		sel3.selectByVisibleText("Qualification");
+		System.out.println("Sales Stage is added Succesfully");
+		
+		// Adding Propability
+		driver.findElement(By.xpath("//input[@id='probability']")).sendKeys("98.42");
+		System.out.println("Probability is added Succesfully");
+		
+		// Adding Description
+		driver.findElement(By.name("description")).sendKeys("THE NEW OPPORTUNITY-1 IS CREATED");
+		System.out.println("Description is added succesfully");
+		
+		// Save 
+		driver.findElement(By.name("button")).click();
+		System.out.println("The new Opportunity is saved Succcesfully");
+		
+		// Signout
+		WebElement Signout = driver.findElement(By.xpath("//img[@src=\"themes/softed/images/user.PNG\"]"));
+		Actions ac2 = new Actions(driver);
+		ac2.moveToElement(Signout).perform();
+		driver.findElement(By.linkText("Sign Out")).click();
+		System.out.println("Signed-Out from the vtiger Application Successfully");
+		
+		// Close the Browser
+		driver.close();
+		System.out.println("Browser has closed Succesfully");
+		
+		}
+	
 }
