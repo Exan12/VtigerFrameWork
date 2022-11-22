@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[HI , I am Organizations Practice Module]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-10-05T03:34:53 IST" name="Default suite" finished-at="2022-10-05T03:34:54 IST" duration-ms="304">
+  <suite started-at="2022-11-22T11:20:40 IST" name="Default suite" finished-at="2022-11-22T11:20:40 IST" duration-ms="118">
     <groups>
     </groups>
-    <test started-at="2022-10-05T03:34:53 IST" name="Default test" finished-at="2022-10-05T03:34:54 IST" duration-ms="304">
-      <class name="Vtiger.Practice.TestNgPractice">
-        <test-method signature="createCustomerTest()[pri:1, instance:Vtiger.Practice.TestNgPractice@2e005c4b]" started-at="2022-10-05T03:34:54 IST" name="createCustomerTest" finished-at="2022-10-05T03:34:54 IST" duration-ms="14" status="PASS">
+    <test started-at="2022-11-22T11:20:40 IST" name="Default test" finished-at="2022-11-22T11:20:40 IST" duration-ms="118">
+      <class name="OrganizationBranch.OrganizationPracticeTest">
+        <test-method signature="OrganizationTest()[pri:0, instance:OrganizationBranch.OrganizationPracticeTest@1d9b7cce]" started-at="2022-11-22T11:20:40 IST" name="OrganizationTest" finished-at="2022-11-22T11:20:40 IST" duration-ms="20" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[HI , I am Organizations Practice Module]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- createCustomerTest -->
-        <test-method signature="modifyCustomerTest()[pri:2, instance:Vtiger.Practice.TestNgPractice@2e005c4b]" started-at="2022-10-05T03:34:54 IST" name="modifyCustomerTest" finished-at="2022-10-05T03:34:54 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- modifyCustomerTest -->
-        <test-method signature="deleteCustomerTest()[pri:3, instance:Vtiger.Practice.TestNgPractice@2e005c4b]" started-at="2022-10-05T03:34:54 IST" name="deleteCustomerTest" finished-at="2022-10-05T03:34:54 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteCustomerTest -->
-      </class> <!-- Vtiger.Practice.TestNgPractice -->
+        </test-method> <!-- OrganizationTest -->
+      </class> <!-- OrganizationBranch.OrganizationPracticeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
